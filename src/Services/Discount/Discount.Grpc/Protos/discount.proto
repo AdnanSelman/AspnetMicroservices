@@ -10,7 +10,7 @@ service DicountProtoService {
 	rpc DeleteDicount (DeleteDiscountRequest) returns (DeleteDiscountResponse);
 }
 
-message GetDicountrequest {
+message GetDiscountRequest {
 	string productName = 1;
 }
 
@@ -21,15 +21,15 @@ message CouponModel {
 	int32 amount = 4;
 }
 
-message CreateDicountrequest {
+message CreateDiscountRequest {
 	CouponModel coupon = 1;
 }
 
-message UpdateDicountrequest {
+message UpdateDiscountRequest {
 	CouponModel coupon = 1;
 }
 
-message DeleteDicountrequest {
+message DeleteDiscountRequest {
 	string productName = 1;
 }
 
